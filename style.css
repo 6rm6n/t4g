@@ -440,8 +440,24 @@ form button[type="submit"]:hover {
   box-shadow: 0 4px 12px rgba(255, 70, 153, 0.6);
 }
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
+  main {
+    padding: 10px;
+    margin: 20px;
+  }
+
+  section {
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  #hero h2, #hero p {
+    font-size: 1.8rem; /* Adjusts font size for smaller devices */
+    padding: 0 10px; /* Adds padding to ensure text doesn't touch the edges */
+  }
+
   #contact-section {
     max-width: 95%;
     padding: 25px;
@@ -497,19 +513,35 @@ section {
   margin-bottom: 10px; /* Adds space below images */
 }
 
-@media (max-width: 768px) {
-  main {
-    padding: 10px;
-    margin: 20px;
-  }
 
-  section {
-    margin: 10px 0;
-    padding: 15px;
-  }
 
-  #hero h2, #hero p {
-    font-size: 1.8rem; /* Adjusts font size for smaller devices */
-    padding: 0 10px; /* Adds padding to ensure text doesn't touch the edges */
-  }
+#team h4 {
+  line-height: 0;
+}
+
+#team p {
+  line-height: 0; /* Adjusted from 1.6, or as needed */
+}
+
+a {
+  color: #5c8de2; /* Green color */
+  /* You can also add other styles here, such as: */
+  text-decoration: none; /* Removes underline */
+}
+
+/* Optional: Change color on hover */
+a:hover {
+  color: #4982d8; /* Darker shade of green */
+}
+
+#join-us h1 {
+  font-size: 2rem;
+}
+
+#join-us p {
+  text-align: left;
+}
+
+#join-us li {
+  text-align: left;
 }
