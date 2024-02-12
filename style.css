@@ -1,0 +1,458 @@
+/* Global Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background-color: #1c1e21; /* Dark background for modern look */
+  color: #f4f4f4; /* Light text for contrast */
+}
+
+header {
+  background: linear-gradient(45deg, #0099ff, #ff3399); /* Gradient header */
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Hero Section Styles */
+#hero {
+  background: url('images/home_bg.JPG') no-repeat center center/cover; /* Add your hero image */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; /* White text for contrast */
+}
+
+.hero-container {
+  max-width: 900px; /* Set a max-width for the content */
+  padding: 20px;
+}
+
+#hero h2 {
+  font-size: 3rem; /* Large, prominent text */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+#hero p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Mason360 Join Section Styles */
+#join-mason360 {
+  background-color: rgba(0, 153, 255, 0.1); /* Light, themed background */
+  text-align: center; /* Center the text */
+  padding: 40px; /* Add some padding for spacing */
+  border-radius: 15px; /* Rounded corners */
+  margin: 40px 0; /* Space above and below the section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.mason360-container h3 {
+  color: #0099ff; /* Themed color for heading */
+  font-size: 2.2rem; /* Larger size for heading */
+  margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.mason360-container p {
+  font-size: 1.2rem; /* Readable text size */
+  color: #f4f4f4; /* Light color for visibility */
+  max-width: 600px; /* Maximum width of text */
+  margin: 0 auto 30px; /* Centering and spacing */
+}
+
+.join-button {
+  background-color: #ff3399; /* Bright color for visibility */
+  color: #fff; /* White text for contrast */
+  padding: 12px 25px; /* Padding for button size */
+  border-radius: 8px; /* Rounded corners for the button */
+  text-decoration: none; /* Remove underline from link */
+  font-weight: bold; /* Bold text for emphasis */
+  font-size: 1.1rem; /* Slightly larger font size */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for interaction */
+}
+
+.join-button:hover {
+  background-color: #ff66b2; /* Lighter shade on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Responsive Design for Mason360 Section */
+@media (max-width: 768px) {
+  .mason360-container h3 {
+    font-size: 1.8rem; /* Smaller font size on smaller screens */
+  }
+
+  .mason360-container p {
+    font-size: 1rem; /* Smaller text size on smaller screens */
+  }
+
+  .join-button {
+    padding: 10px 20px; /* Slightly smaller padding on smaller screens */
+    font-size: 1rem; /* Smaller font size on smaller screens */
+  }
+}
+
+/* LinkedIn Section Styles */
+#linkedin-section {
+  background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+  text-align: center; /* Center the text */
+  padding: 40px; /* Padding for spacing */
+  border-radius: 15px; /* Rounded corners */
+  margin: 40px 0; /* Space above and below the section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.linkedin-container h3 {
+  color: #0077b5; /* LinkedIn's brand color for heading */
+  font-size: 2.2rem; /* Large size for heading */
+  margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.linkedin-container p {
+  font-size: 1.2rem; /* Readable text size */
+  color: #f4f4f4; /* Light color for visibility */
+  max-width: 600px; /* Maximum width of text */
+  margin: 0 auto 30px; /* Centering and spacing */
+}
+
+.linkedin-button {
+  background-color: #0077b5; /* LinkedIn's brand color */
+  color: #fff; /* White text for contrast */
+  padding: 12px 25px; /* Padding for button size */
+  border-radius: 8px; /* Rounded corners for the button */
+  text-decoration: none; /* Remove underline from link */
+  font-weight: bold; /* Bold text for emphasis */
+  font-size: 1.1rem; /* Slightly larger font size */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for interaction */
+}
+
+.linkedin-button:hover {
+  background-color: #005fa2; /* Slightly darker shade on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Discord Section Styles */
+#discord-section {
+  background-color: rgba(114, 137, 218, 0.1); /* Discord's brand color, lightened */
+  text-align: center; /* Center the text */
+  padding: 40px; /* Padding for spacing */
+  border-radius: 15px; /* Rounded corners */
+  margin: 40px 0; /* Space above and below the section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.discord-container h3 {
+  color: #7289da; /* Discord's brand color for heading */
+  font-size: 2.2rem; /* Large size for heading */
+  margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.discord-container p {
+  font-size: 1.2rem; /* Readable text size */
+  color: #f4f4f4; /* Light color for visibility */
+  max-width: 600px; /* Maximum width of text */
+  margin: 0 auto 30px; /* Centering and spacing */
+}
+
+.discord-button {
+  background-color: #7289da; /* Discord's brand color */
+  color: #fff; /* White text for contrast */
+  padding: 12px 25px; /* Padding for button size */
+  border-radius: 8px; /* Rounded corners for the button */
+  text-decoration: none; /* Remove underline from link */
+  font-weight: bold; /* Bold text for emphasis */
+  font-size: 1.1rem; /* Slightly larger font size */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for interaction */
+}
+
+.discord-button:hover {
+  background-color: #5b6eae; /* Slightly darker shade on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Instagram Section Styles */
+#instagram-section {
+  background-color: rgba(235, 125, 162, 0.1); /* Instagram brand color, lightened */
+  text-align: center;
+  padding: 40px;
+  border-radius: 15px;
+  margin: 40px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.instagram-container h3 {
+  color: #e1306c; /* Instagram brand color */
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.instagram-container p {
+  font-size: 1.2rem;
+  color: #f4f4f4;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.instagram-button {
+  background-color: #e1306c;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.instagram-button:hover {
+  background-color: #c1275b;
+  transform: translateY(-3px);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem; /* Larger header font */
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold; /* Bold navigation text */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover, .active {
+  color: #e6e6e6; /* Subtle change on hover and active state */
+}
+
+/* Section Styles */
+section {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Translucent section backgrounds */
+  margin: 20px 0; /* Margin between sections */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Deeper shadow for depth */
+}
+
+footer {
+  background: #111; /* Darker footer */
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Contact Form Improvements */
+#contact-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2); /* Slightly more visible */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #0099ff; /* Border color matching the header */
+}
+
+#contact-form input[type="submit"] {
+  background-color: #ff3399; /* Vibrant submit button */
+  transition: background-color 0.3s, transform 0.3s; /* Additional transform transition */
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: #ff66b2; /* Lighter shade on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Project and Event Cards Enhancement */
+.project, .event {
+  background-color: rgba(255, 255, 255, 0.1); /* Consistent styling with sections */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+}
+
+.project:hover, .event:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+/* Link/Button Enhancements */
+.details-link {
+  background-color: #0099ff; /* Consistent with header gradient */
+  transition: background-color 0.3s, transform 0.3s; /* Transform transition */
+}
+
+.details-link:hover {
+  background-color: #00bfff; /* Lighter shade on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #hero h2 {
+      font-size: 2.5rem;
+  }
+
+  #hero p {
+      font-size: 1.2rem;
+  }
+}
+
+/* header stuff */
+header {
+  background: linear-gradient(45deg, #0099ff, #ff3399);
+  color: #fff;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between; /* Spreads out the title and nav */
+  align-items: center;
+}
+
+.header-title h1 {
+  margin: 0;
+  padding-left: 20px; /* Padding on the left side */
+  font-size: 2.5rem;
+}
+
+nav.header-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Aligns navigation items in a row */
+}
+
+nav.header-nav ul li {
+  margin-right: 20px;
+}
+
+nav.header-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav.header-nav ul li a:hover, .active {
+  color: #e6e6e6;
+}
+
+/* Header Title Styles */
+.header-title h1 {
+  margin: 0;
+  padding-left: 20px; /* Padding on the left side */
+  font-size: 2.5rem;
+  cursor: pointer; /* Indicates interactivity */
+  color: #fff; /* Initial color white */
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: color 0.3s ease; /* Transition for color change */
+}
+
+/* Hover Effect with Animated Gradient */
+.header-title h1:hover {
+  color: transparent; /* Make text transparent to show the gradient */
+  background-image: linear-gradient(45deg, #8a2be2, #ff69b4, #cbb8dd, #ff69b4, #853bca); /* Gradient colors */
+  background-size: 400% 400%; /* Size for gradient animation */
+  animation: moveGradient 10s ease infinite; /* Apply animation */
+}
+
+/* Keyframes for Gradient Animation */
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Contact Form Styling - Refined Layout */
+#contact-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 35px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  color: #f4f4f4;
+}
+
+#contact-section h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+form label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+form input[type="email"], form textarea {
+  width: calc(100% - 30px); /* Adjust width to account for padding */
+  padding: 15px;
+  margin: 0 auto; /* Centering fields */
+  border: 2px solid transparent;
+  background-color: #2a2d35;
+  color: #f4f4f4;
+  border-radius: 7px;
+  font-size: 1.05rem;
+  transition: all 0.5s ease;
+}
+
+form input[type="email"]:focus, form textarea:focus {
+  outline: none;
+  border-color: #00c8ff;
+  box-shadow: 0 0 8px rgba(0, 200, 255, 0.7);
+}
+
+form button[type="submit"] {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #ff4499;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #ff66aa;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 70, 153, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #contact-section {
+    max-width: 95%;
+    padding: 25px;
+  }
+
+  #contact-section h2 {
+    font-size: 1.9rem;
+  }
+
+  form input[type="email"], form textarea {
+    font-size: 1rem;
+    width: calc(100% - 20px); /* Adjust for smaller screens */
+  }
+}

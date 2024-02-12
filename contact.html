@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tech for Good</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <h1>Tech for Good</h1>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, please feel free to reach out to us at gmut4g@gmail.com, or submit a message below!</p>
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form
+            action="https://formspree.io/f/xeqyejnp"
+            method="POST"
+            >
+            <label>
+                Your email:
+                <input type="email" name="email">
+            </label>
+            <label>
+                Your message:
+                <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+        </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Tech for Good at George Mason University</p>
+    </footer>
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
