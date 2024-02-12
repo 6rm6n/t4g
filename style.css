@@ -456,3 +456,60 @@ form button[type="submit"]:hover {
     width: calc(100% - 20px); /* Adjust for smaller screens */
   }
 }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items horizontally in the container */
+  max-width: 800px; /* Or any max-width you prefer */
+  margin: 0 auto; /* Center the main content */
+  padding: 20px;
+}
+
+section {
+  width: 100%; /* Ensures sections take the full width of the main container */
+  padding: 20px;
+  margin: 20px 0; /* Adds more space around sections */
+  text-align: center; /* Centers text within each section */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: adds a subtle shadow for depth */
+  border-radius: 10px; /* Optional: rounds the corners of each section */
+  background: rgba(255, 255, 255, 0.1); /* Slight background for contrast */
+}
+
+/* Enhances readability and aesthetic appeal */
+#about-section, #mission, #history, #team {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Further ensures content within these sections is centered */
+}
+
+#team div { /* Adjusts the team member divs for a consistent look */
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#team img { /* Ensures images within the team section are centered and have a uniform size */
+  width: 150px; /* Adjusts the width of the team member images */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 50%; /* Makes images circular */
+  margin-bottom: 10px; /* Adds space below images */
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+    margin: 20px;
+  }
+
+  section {
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  #hero h2, #hero p {
+    font-size: 1.8rem; /* Adjusts font size for smaller devices */
+    padding: 0 10px; /* Adds padding to ensure text doesn't touch the edges */
+  }
+}
